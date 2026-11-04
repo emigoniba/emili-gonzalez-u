@@ -1,2 +1,4 @@
 # emili-gonzalez-u
-SXI - Pràctiques
+## SXI - Pràctiques
+
+Repositori per a pràctiques de SXI - ASIR
