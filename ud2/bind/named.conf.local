@@ -1,0 +1,17 @@
+//
+// Do any local configuration here
+//
+
+// Es defineix la zona
+zone "techcorp.lan" {
+    type master;
+    // Arxiu on es desa la configuració i registres de techcorp.lan
+    file "/etc/bind/db.techcorp.lan";
+};
+
+// Es defineix la zona de resolució inversa
+zone "100.168.192.in-addr.arpa" {
+    type master;
+    // Arxiu on es desa la configuració de la zona inversa
+    file "/etc/bind/db.192.168.100";
+};

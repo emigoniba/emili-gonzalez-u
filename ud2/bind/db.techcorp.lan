@@ -1,0 +1,24 @@
+$TTL 86400
+@   IN  SOA ns1.techcorp.lan. admin.techcorp.lan. (
+        2026110401 ; Serial
+        3600       ; Refresh
+        1800       ; Retry
+        604800     ; Expire
+        86400      ; Negative Cache TTL
+)
+
+; Servidor de noms
+@       IN  NS      ns1.techcorp.lan.
+
+; Registres A
+ns1     IN  A       192.168.100.10
+gw      IN  A       192.168.100.1
+web     IN  A       192.168.100.20
+mail    IN  A       192.168.100.30
+
+; Registre CNAME
+www     IN  CNAME   web.techcorp.lan.
+
+; Registre MX
+@       IN  MX  10  mail.techcorp.lan.
+

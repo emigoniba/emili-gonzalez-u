@@ -1,0 +1,20 @@
+options {
+    # 
+    directory "/var/cache/bind";
+
+    # Activem els reenviadors, DNS externs on consultarà si no té una zona en local
+    forwarders {
+        8.8.8.8;
+        1.1.1.1;
+    };
+
+    # Si activem forward only, les consultes locals que no pot resoldre les envia SOLS
+    # als reenviadors configurats. No intenta resoldre-ho directament.
+    forward only;
+
+    # Es permet la consulta a la xarxa local i a localhost
+    allow-query {
+        192.168.100.0/24;
+        localhost;
+    };
+};
