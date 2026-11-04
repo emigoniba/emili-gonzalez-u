@@ -2,6 +2,6 @@
 
 ## Arxius inclosos
 
-#Memòria [SXI_ACT02_Avaluable.pdf](SXI_ACT02_Avaluable.pdf)
-#Arxius configuració BIND [bind](bind)
-#Vídeo explicatiu
+* Memòria [SXI_ACT02_Avaluable.pdf](SXI_ACT02_Avaluable.pdf)
+* Arxius configuració BIND [bind](bind)
+* Vídeo explicatiu
